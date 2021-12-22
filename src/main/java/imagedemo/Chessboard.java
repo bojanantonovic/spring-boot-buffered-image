@@ -25,7 +25,7 @@ public class Chessboard {
 		return arrayHttpMessageConverter;
 	}
 
-	@GetMapping("/")
+	@GetMapping
 	@ResponseBody
 	public void getImageAsByteArray(HttpServletResponse response) throws IOException {
 		response.setContentType(MediaType.IMAGE_PNG_VALUE);
